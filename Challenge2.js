@@ -42,5 +42,5 @@ function check_Each_Letters(listdagi_soz, input_soz) {
   return true;
 }
 
-const find_animal = findAnimal("fdgwocalt");
+const find_animal = findAnimal("fdgwoalt");
 console.log(find_animal);
