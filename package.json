@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Mr-Perfectuz/REJA/issues"
   },
-  "homepage": "https://github.com/Mr-Perfectuz/REJA#readme"
+  "homepage": "https://github.com/Mr-Perfectuz/REJA#readme",
+  "dependencies": {
+    "inquirer": "^9.2.11",
+    "moment": "^2.29.4",
+    "validator": "^13.11.0"
+  }
 }
