@@ -18,7 +18,7 @@ function getDigits(text) {
 // Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin.
 // MASALAN checkSimilarity("laepp", "apple") true return qiladi.
 
-function areAnagrams(string1, string2) {
+function checkSimilarity(string1, string2) {
   string1 = string1.toLowerCase();
   string2 = string2.toLowerCase();
 
@@ -27,8 +27,8 @@ function areAnagrams(string1, string2) {
   );
 }
 
-var result1 = areAnagrams("laepp", "apple");
+var result1 = checkSimilarity("laepp", "apple");
 console.log(result1);
 
-var result2 = areAnagrams("listen", "silent");
+var result2 = checkSimilarity("listen", "silent");
 console.log(result2);
