@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon server.js",
+    "train": "nodeman train.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,8 +20,11 @@
   },
   "homepage": "https://github.com/Mr-Perfectuz/REJA#readme",
   "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
     "inquirer": "^9.2.11",
     "moment": "^2.29.4",
+    "nodeman": "^1.1.2",
     "validator": "^13.11.0"
   }
 }
