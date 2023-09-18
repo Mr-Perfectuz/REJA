@@ -25,3 +25,8 @@ console.log(email);
 //   .catch((err) => console.log(err));
 
 // Module package FILE
+
+const Account = require("./account.js");
+
+const myAccount = new Account("Martin", 200, 2345892348238);
+myAccount.makeDeposit(300);
