@@ -79,3 +79,5 @@ shop1.sotish(3, 3, 2);
 shop1.qoldiq();
 
 console.log("------------");
+
+// Bu comment
