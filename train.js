@@ -81,3 +81,4 @@ shop1.qoldiq();
 console.log("------------");
 
 // Bu comment
+// Bu comment 2
