@@ -1,0 +1,89 @@
+.frame {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #e5e5e5;
+}
+
+.main-frame {
+  position: relative;
+  width: 1440px;
+  height: 1312px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+  background-color: #d9dba0;
+}
+
+.main-frame .left_frame {
+  position: relative;
+  width: 305px;
+  height: 1315px;
+  background-color: #fff;
+}
+
+.main-frame .middle_frame {
+  position: relative;
+  width: 970px;
+  height: 1259px;
+  margin-left: 30px;
+  margin-right: 27px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.main-frame .right_frame {
+  position: relative;
+  width: 108px;
+  height: 1315px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.left_general {
+  position: relative;
+  margin-top: 25px;
+  margin-left: 45px;
+  background-color: aqua;
+}
+.main-frame .left_1 {
+  position: relative;
+  width: 228px;
+  height: 253px;
+  margin-top: 50px;
+  margin-left: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+.main-frame .marginer {
+  position: relative;
+  width: 220px;
+  height: 0px;
+  margin-bottom: 25px;
+  margin-left: 40px;
+  margin-top: 39px;
+  border: 1px solid #fff;
+}
+.main-frame .left_3 {
+  width: 220px;
+  height: 153px;
+}
+.main-frame .left_4 {
+  width: 220px;
+  height: 153px;
+}
+.main-frame .left_5 {
+  width: 186px;
+  height: 148px;
+}
