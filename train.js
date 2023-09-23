@@ -73,12 +73,44 @@ class Shop {
 }
 
 const shop1 = new Shop(4, 5, 2);
-shop1.qoldiq();
+// shop1.qoldiq();
 // shop1.qabul(1, 3, 4);
-shop1.sotish(3, 3, 2);
-shop1.qoldiq();
+// shop1.sotish(3, 3, 2);
+// shop1.qoldiq();
 
-console.log("------------");
+// console.log("------------");
 
 // Bu comment
 // Bu comment 2
+
+// console.log("Jack Ma maslahatlari");
+
+const list = [
+  "Yaxshi talaba bo'ling", //0-20
+  "To'g'ri boshliq tanlang va ko'proq xato qiling", //20-30
+  "O'z ustingizda ishlashni boshlang", //30-40
+  "Siz kuchli bo'lgan narsalarni qiling ", //40-50
+  "Yoshlarga investetsiya qiling", //50-60
+  "Endi dam oling foydasi yo'q", // 60
+];
+
+function maslahatBering(a, callback) {
+  if (typeof a !== "number") callback("insert a number", null);
+  else if (a <= 20) callback(null, list[0]);
+  else if (a >= 20 && a < 30) callback(null, list[1]);
+  else if (a > 30 && a <= 40) callback(null, list[2]);
+  else if (a > 40 && a <= 50) callback(null, list[3]);
+  else if (a > 50 && a <= 60) callback(null, list[4]);
+  else {
+    setTimeout(function () {
+      callback(null, list[5]);
+    }, 500);
+  }
+}
+console.log("Passed herre 0");
+maslahatBering(65, (err, data) => {
+  if (err) console.log("error: ", err);
+  console.log("result: ", data);
+});
+
+console.log("Passed here 1");
