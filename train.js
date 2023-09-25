@@ -83,7 +83,7 @@ const shop1 = new Shop(4, 5, 2);
 // Bu comment
 // Bu comment 2
 
-// console.log("Jack Ma maslahatlari");
+console.log("Jack Ma maslahatlari");
 
 const list = [
   "Yaxshi talaba bo'ling", //0-20
@@ -94,23 +94,45 @@ const list = [
   "Endi dam oling foydasi yo'q", // 60
 ];
 
-function maslahatBering(a, callback) {
-  if (typeof a !== "number") callback("insert a number", null);
-  else if (a <= 20) callback(null, list[0]);
-  else if (a >= 20 && a < 30) callback(null, list[1]);
-  else if (a > 30 && a <= 40) callback(null, list[2]);
-  else if (a > 40 && a <= 50) callback(null, list[3]);
-  else if (a > 50 && a <= 60) callback(null, list[4]);
+// function maslahatBering(a, callback) {
+async function maslahatBering(a) {
+  // if (typeof a !== "number") callback("insert a number", null);
+  if (typeof a !== "number") throw new Error("inset a number");
+  else if (a <= 20) return list[0];
+  else if (a >= 20 && a < 30) return null, list[1];
+  else if (a > 30 && a <= 40) return null, list[2];
+  else if (a > 40 && a <= 50) return null, list[3];
+  else if (a > 50 && a <= 60) return null, list[4];
   else {
-    setTimeout(function () {
-      callback(null, list[5]);
-    }, 500);
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(list[5]);
+      }, 5000);
+    });
+    // return list[5];
+    // setTimeout(function () {
+    //   callback(null, list[5]);
+    // }, 500);
   }
 }
-console.log("Passed herre 0");
-maslahatBering(65, (err, data) => {
-  if (err) console.log("error: ", err);
-  console.log("result: ", data);
-});
+// console.log("Passed herre 0");
+// maslahatBering(65)
+//   .then((data) => {
+//     console.log("javob", data);
+//   })
+//   .catch((err) => {
+//     console.log("Error", err);
+//   });
 
-console.log("Passed here 1");
+// console.log("Passed here 1");
+
+async function run() {
+  let javob = await maslahatBering(4);
+  console.log(javob);
+  javob = await maslahatBering(70);
+  console.log(javob);
+  javob = await maslahatBering(40);
+  console.log(javob);
+}
+
+run();
