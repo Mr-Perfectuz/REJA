@@ -1,3 +1,13 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 .frame {
   width: 100%;
   height: 100%;
@@ -11,25 +21,22 @@
 .main-frame {
   position: relative;
   width: 1440px;
-  height: 1312px;
-  align-items: center;
   display: flex;
   flex-direction: row;
-  margin-top: 2px;
-  background-color: #d9dba0;
+  background-color: #f0f0f6;
 }
 
 .main-frame .left_frame {
   position: relative;
   width: 305px;
-  height: 1315px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-frame .middle_frame {
   position: relative;
   width: 970px;
-  height: 1259px;
   margin-left: 30px;
   margin-right: 27px;
   display: flex;
@@ -50,30 +57,111 @@
 
 .left_general {
   position: relative;
-  margin-top: 25px;
   margin-left: 45px;
-  background-color: aqua;
 }
 .main-frame .left_1 {
   position: relative;
   width: 228px;
-  height: 253px;
   margin-top: 50px;
   margin-left: 37px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
 }
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+.lang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lang-h3 {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+.left-1-img {
+  width: 156px;
+  height: 135px;
+}
+
+.left-1-name {
+  margin: 0;
+  padding: 0;
+  margin-top: 27px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.6%; /* 22.248px */
+  text-transform: capitalize;
+}
+
+.left-1-title {
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  opacity: 0.6;
+}
+
+.left-icons {
+  width: 228px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-dribble {
+  margin-top: 5px;
+}
+
 .main-frame .marginer {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 220px;
-  height: 0px;
-  margin-bottom: 25px;
   margin-left: 40px;
-  margin-top: 39px;
-  border: 1px solid #fff;
+  margin-top: 30px;
+}
+
+.hr {
+  margin-bottom: 24px;
+  width: 220px;
+  height: 1.5px;
+}
+
+.marginer-innner {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.marginer-innner-text {
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  background-color: #ffb400;
+  margin-bottom: 10px;
+}
+.freelance {
+  color: #7eb942;
+}
+.skills-h3 {
+  margin-top: 50px;
+}
+.extra-wrapper {
+  display: flex;
+  align-items: center;
+}
+.extra-skills {
+  display: flex;
+  margin-left: 15px;
 }
 .main-frame .left_3 {
   width: 220px;
@@ -86,4 +174,81 @@
 .main-frame .left_5 {
   width: 186px;
   height: 148px;
+  margin-left: 40px;
+  background-color: #fff;
+}
+
+/* Main  */
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 61px;
+  padding-right: 61px;
+  position: relative;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .main::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("./author/images/e2.png");
+  right: 300;
+} */
+
+.title {
+  margin-top: 99px;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123.6%;
+}
+.text-wrapper {
+}
+.text {
+  /* H6 - 16px */
+  width: 424px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+  margin-top: 17px;
+}
+
+.button {
+  width: 154px;
+  height: 50px;
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb400;
+  border-radius: 5px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+.button:active {
+  opacity: 0.6;
+}
+
+.btn-txt {
+  color: var(--Black, #2b2b2b);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 5px;
+  margin-right: 5px;
 }

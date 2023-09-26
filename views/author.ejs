@@ -14,18 +14,284 @@
   <div class="frame">
     <div class="main-frame">
       <div class="left_frame">
-        <div class="left_1 left_general"></div>
-        <div class="marginer"></div>
-        <div class="left_2"></div>
-        <div class="marginer"></div>
-        <div class="left_3 left_general"></div>
-        <div class="marginer"></div>
-        <div class="left_4 left_general"></div>
-        <div class="marginer"></div>
-        <div class="left_5 left_general"></div>
-        <div class="marginer"></div>
+        <div class="left_1 left_general">
+          <div class="left_1_1">
+            <img class="left-1-img" src="images/profile.png" alt="pic" width="156px" height="135px">
+          </div>
+          <h3 class="left-1-name"><%=user.name%></h3>
+          <p class="left-1-title"><%=user.profession%></p>
+          <div class="left-icons">
+            <img src="images/Facebook.png" alt="icon" width="25" height="21">
+            <img src="images/Instagram.png" alt="icon" width="25" height="21">
+            <img src="images/Twitter.png" alt="icon" width="25" height="21">
+            <img src="images/Linkeding.png" alt="icon" width="25" height="21">
+            <img src="images/Youtube.png" alt="icon" width="25" height="21">
+            <img src="images/Dribbble.png" class="icon-dribble" alt="icon" width="30" height="30">
+          </div>
+        </div>
+        <div class="marginer">
+          <hr class="hr">
+
+          <div class="marginer-innner">
+            <div class="marginer-innner-text">Age:</div>
+            <p class="age"><%=user.age%></p>
+          </div>
+          <div class="marginer-innner">
+            <div class="marginer-innner-text">Residence:</div>
+            <p class="residence"><%=user.residence%></p>
+          </div>
+          <div class="marginer-innner">
+            <div class="marginer-innner-text">freelance:</div>
+            <p class="freelance"><%=user.freelance%></p>
+          </div>
+          <div class="marginer-innner">
+            <div class="marginer-innner-text">Adress:</div>
+            <p class="adress"><%=user.adress%></p>
+          </div>
+
+        </div>
+
+        <div class="left_2">
+
+        </div>
+
+        <hr class="hr">
+        <div class="left_4 left_general">
+          <h3 class="lang-h3">Languages</h3>
+
+          <div class="lang-wrapper">
+            <div class="lang">
+              <div class="lang-name"><%=user.language[0]%></div>
+              <div class="lang-percent">100%</div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+              <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+              <rect x="2" y="2" width="217" height="2" rx="1" fill="#FFB400"/>
+            </svg>
+          </div>
+          <div class="lang-wrapper">
+            <div class="lang">
+              <div class="lang-name"><%=user.language[1]%></div>
+              <div class="lang-percent">80%</div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+              <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+              <rect x="2" y="2" width="208" height="2" rx="1" fill="#FFB400"/>
+            </svg>
+          </div>
+          <div class="lang-wrapper">
+            <div class="lang">
+              <div class="lang-name"><%=user.language[2]%></div>
+              <div class="lang-percent">60%</div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+              <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+              <rect x="2" y="2" width="190" height="2" rx="1" fill="#FFB400"/>
+            </svg>
+          </div>
+          <hr class="hr">
+
+        </div>
+
+
+        <div class="marginer">
+          <h3 class="skills-h3">Skills</h3>
+          <div class="lang-wrapper">
+            <div class="lang">
+              <div class="lang-name"><%=user.skills[0]%></div>
+              <div class="lang-percent">90%</div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+              <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+              <rect x="2" y="2" width="209" height="2" rx="1" fill="#FFB400"/>
+            </svg>
+          </div>
+          <div class="lang-wrapper">
+            <div class="lang">
+              <div class="lang-name"><%=user.skills[1]%></div>
+              <div class="lang-percent">85%</div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+              <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+              <rect x="2" y="2" width="207" height="2" rx="1" fill="#FFB400"/>
+            </svg>
+          </div>
+          <div class="lang-wrapper">
+            <div class="lang">
+              <div class="lang-name"><%=user.skills[2]%></div>
+              <div class="lang-percent">80%</div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+              <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+              <rect x="2" y="2" width="201" height="2" rx="1" fill="#FFB400"/>
+            </svg>
+          </div>
+          <div class="lang-wrapper">
+            <div class="lang">
+              <div class="lang-name"><%=user.skills[3]%></div>
+              <div class="lang-percent">75%</div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+              <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+              <rect x="2" y="2" width="187" height="2" rx="1" fill="#FFB400"/>
+            </svg>
+          </div>
+          <div class="lang-wrapper">
+            <div class="lang">
+              <div class="lang-name"><%=user.skills[4]%></div>
+              <div class="lang-percent">85%</div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
+              <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
+              <rect x="2" y="2" width="207" height="2" rx="1" fill="#FFB400"/>
+            </svg>
+          </div>
+          <hr class="hr">
+        </div>
+
+        <div class="left_5 ">
+          <h3 class="extra-skills-h3">Extra Skills</h3>
+
+          <div class="extra-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+              <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+            </svg>
+            <div class="extra-skills">
+              <div><%=user.extra_skills[0]%></div>,
+              <div><%=user.extra_skills[1]%></div>
+            </div>
+          </div>
+
+          <div class="extra-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+              <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+            </svg>
+            <div class="extra-skills">
+              <div><%=user.extra_skills[2]%></div>,
+              <div><%=user.extra_skills[3]%></div>
+            </div>
+          </div>
+
+          <div class="extra-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+              <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+            </svg>
+            <div class="extra-skills">
+              <div><%=user.extra_skills[4]%></div>,
+              <div><%=user.extra_skills[5]%></div>
+            </div>
+          </div>
+
+          <div class="extra-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
+              <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
+            </svg>
+            <div class="extra-skills">
+              <div><%=user.extra_skills[6]%></div>,
+              <div><%=user.extra_skills[7]%></div>
+            </div>
+          </div>
+          <hr class="hr hr-last">
+
+        </div>
+        <div class="marginer">
+
+        </div>
       </div>
-      <div class="middle_frame"></div>
+
+      <div class="middle_frame">
+
+        <div class="main-wrapper">
+          <div class="main">
+            <h1 class="title">Doctor neurologists <br>
+              in OHSU Hospital </h1>
+            <h3 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</h3>
+            <div class="button">
+              <h3 class="btn-txt">HIRE ME</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                <g clip-path="url(#clip0_2_2655)">
+                <path d="M10.8554 7.72765L7.27939 4.15165L8.22206 3.20898L13.4074 8.39432L8.22206 13.5797L7.27939 12.637L10.8554 9.06098H2.74072V7.72765H10.8554Z" fill="#2B2B2B"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_2_2655">
+                <rect width="16" height="16" fill="white" transform="translate(0.0742188 0.394531)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </div>
+          </div>
+          <img class="main-img" src="images/main_img.png" alt="main img" width="326px" height="446px">
+        </div>
+
+        <div class="services">
+          <h2>my services</h2>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</p>
+        </div>
+
+        <div class="article-wrapper">
+
+          <div class="article">
+            <div class="article-inner">
+              <img src="" alt="article img">
+              <h4 class="article-img">Web Development</h4>
+              <p class="article-text">Blog, E-commerce</p>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-inner">
+              <img src="" alt="article img">
+              <h4 class="article-img">UI/UX Design</h4>
+              <p class="article-text">Mobile App, Website Design</p>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-inner">
+              <img src="" alt="article img">
+              <h4 class="article-img">Sound Design</h4>
+              <p class="article-text">Voice Over, Beat Making</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="article-wrapper">
+
+          <div class="article">
+            <div class="article-inner">
+              <img src="" alt="article img">
+              <h4 class="article-img">Mobile App Design</h4>
+              <p class="article-text">Character Design, Back End</p>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-inner">
+              <img src="" alt="article img">
+              <h4 class="article-img">Photography</h4>
+              <p class="article-text">Portrait, Product Photography</p>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-inner">
+              <img src="" alt="article img">
+              <h4 class="article-img">Advertising</h4>
+              <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. </p>
+              <div class="read-more">
+                <h4 class="read-more-txt">Order Now</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
       <div class="right_frame"></div>
     </div>
   </div>

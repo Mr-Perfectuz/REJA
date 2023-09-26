@@ -60,3 +60,5 @@ server.listen(PORT, function () {
 // Start line  URL qismi
 //  HTTP request header
 //  Request body
+
+// MVC , injections ,middleware
