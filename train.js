@@ -136,3 +136,16 @@ async function run() {
 }
 
 run();
+
+/*
+
+DEFININITION                    CALL
+
+callbak         =               callbak
+
+async/await     x            then/catch
+promise         x            async/await
+
+
+
+*/
