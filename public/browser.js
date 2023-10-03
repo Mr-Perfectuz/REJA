@@ -11,7 +11,7 @@ function itemTemplate(item) {
 </li>`;
 }
 let createField = document.getElementById("create-field");
-console.log("Create field", createField);
+// console.log("Create field", createField);
 
 document.getElementById("create-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -32,7 +32,6 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
 
 document.addEventListener("click", function (e) {
   // delete operator
-  console.log(e.target);
   if (e.target.classList.contains("delete-me")) {
     if (confirm("Aniq o'chirmoqchimisiz ?")) {
       axios
@@ -46,4 +45,40 @@ document.addEventListener("click", function (e) {
         });
     }
   }
+
+  // edit oper
+  if (e.target.classList.contains("edit-me")) {
+    let userInput = prompt(
+      "O'zgartirish kiring",
+      e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+    );
+    if (userInput) {
+      axios
+        .post("/edit-item", {
+          id: e.target.getAttribute("data-id"),
+          new_input: userInput,
+        })
+        .then((response) => {
+          console.log(response);
+          e.target.parentElement.parentElement.querySelector(
+            ".item-text"
+          ).innerHTML = userInput;
+        })
+        .catch((err) => {
+          console.log("Please try again");
+        });
+    }
+  }
+});
+
+document.getElementById("clean-all").addEventListener("click", function () {
+  axios
+    .post("/delete-all", { delete_all: true })
+    .then((response) => {
+      alert(response.data.state);
+      document.location.reload();
+    })
+    .catch((err) => {
+      console.log("Please try again");
+    });
 });
