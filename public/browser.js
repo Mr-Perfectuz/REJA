@@ -77,6 +77,7 @@ document.getElementById("clean-all").addEventListener("click", function (e) {
     .post("/delete-all", { delete_all: true })
     .then((response) => {
       alert(response.data.state);
+      // e.target.parentElement.querySelector(".item-list").html = "";
       // document.location.reload();
       while (item_list.firstChild) {
         item_list.removeChild(item_list.firstChild);
